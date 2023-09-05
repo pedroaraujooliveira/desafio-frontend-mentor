@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 1440px;
+    height: 800px;
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    margin-left: 70px;
+    position: relative;
+}
+
+.logo img {
+    width: 220px;
+    margin: 50px 0 85px 0;
+}
+
+.information {
+    display: flex;
+}
+
+.information .ilustration img {
+    width: 700px;
+}
+
+.aside {
+    margin-left: 70px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-top: 50px;
+}
+
+.aside h1 {
+    font-weight: 600;
+    max-width: 400px;
+    font-size: 35px;
+}
+
+.aside .text {
+    font-weight: 400;
+    max-width: 460px;
+    margin: 30px 0 40px 0;
+}
+
+a.btn {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 15px 60px 15px 60px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+a.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    transition: 0.3s;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px;
+    width: 180px;
+    position: absolute;
+    right: 30px;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
+    font-size: 18px;
+    color: #fff;
+}
+
+.border {
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.border:hover {
+    border-color: hsl(300, 57%, 54%);
+
+    .fa-facebook-f,
+    .fa-instagram,
+    .fa-twitter {
+        color: hsl(300, 57%, 54%);
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        background-image: url('../images/bg-mobile.svg');
+    }
+
+    .container {
+        margin-left: 38px;
+        height: 100vh;
+        max-width: 300px;
+        position: relative;
+    }
+
+    .logo img {
+        width: 130px;
+        margin: 35px 0 35px 0;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .information .ilustration img {
+        width: 300px;
+        margin-top: 15px;
+    }
+
+    .aside {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .aside h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .aside .text {
+        line-height: 25px;
+    }
+
+    a.btn {
+        padding: 10px 70px 10px 70px;
+        width: 200px;
+        font-size: 13px;
+    }
+
+    .footer {
+        width: 110px;
+        transform: translateX(55px);
+        margin-top: 50px;
+    }
+
+    .fa-facebook-f,
+    .fa-instagram,
+    .fa-twitter {
+        font-size: 15px;
+    }
+
+    .border {
+        display: flex;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
